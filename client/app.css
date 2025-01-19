@@ -1,0 +1,126 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	/*background: url('https://newtonwellesleyobgyn.com/wp-content/uploads/2021/02/High-Risk-Pregnancy.jpg') no-repeat center center/cover;
+*/}
+
+/* Style du formulaire */
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Image d'arrière-plan (bandeau en haut de la page) */
+.img {
+    width: 100%;
+    height: 450px;
+    background: url('https://newtonwellesleyobgyn.com/wp-content/uploads/2021/02/High-Risk-Pregnancy.jpg') no-repeat center center/cover;
+   	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Style des titres */
+form h2 {
+    color: #d77fa1; /* Rose pastel */
+    font-size: 16px; /* Taille réduite */
+    margin-bottom: 5px; /* Espacement réduit entre le label et le champ */
+}
+
+/* Réduction de l'espace entre chaque champ */
+form .area {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Moins d'espace entre les champs */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+form .area:focus {
+    border-color: #d77fa1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(215, 127, 161, 0.4);
+}
+
+/* Bouton de soumission */
+form .submit {
+    background-color: #6ab1d7; /* Bleu pastel */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .submit:hover {
+    background-color: #549ab5;
+}
+
+/* Résultat affiché */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fdf6f0;
+    border: 1px solid #d77fa1;
+    border-radius: 5px;
+    color: #d77fa1;
+    font-weight: bold;
+	height:40px;
+}
+
+/* Alerte personnalisée */
+#customAlert {
+    display: none;
+    background-color: #d77fa1;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Conteneur principal pour le titre et l'image */
+.header-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    
+}
+
+/* Titre au-dessus de l'image */
+.header-title {
+    position: absolute;
+    top: -120px; /* Ajustez cette valeur pour placer le titre au-dessus de l'image */
+    left: 100%;
+    transform: translateX(-50%);
+    color: #ffffff; /* Blanc pour contraster avec l'image */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le rendre lisible */
+    padding: 10px 200px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 150%;
+    z-index: 10; /* Assurez-vous qu'il reste au-dessus de l'image */
+    
+}

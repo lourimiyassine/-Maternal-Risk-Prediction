@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel='stylesheet' href='bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css'>
+    <script rel='stylesheet' href='bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js'></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1 class="header-title">Pregnancy Risk Prediction</h1>
+        <div class="img"></div>
+    </div>
+    
+    
+<div class="img">
+    
+</div>
+
+<form class="form">
+	<h2>Age</h2>
+    <input class="area"  type="text" id="Age" class="floatLabel" name="Squareft" placeholder="+18" checked>
+	
+	<h2>SystolicBP</h2>
+    <input class="area"  type="text" id="SystolicBP" class="floatLabel" name="Squareft" placeholder="0000" checked>
+	
+	<h2>DiastolicBP</h2>
+    <input class="area"  type="text" id="DiastolicBP" class="floatLabel" name="Squareft" placeholder="0000" checked>
+	
+	<h2>BS</h2>
+    <input class="area"  type="text" id="BS" class="floatLabel" name="Squareft" placeholder="0000" checked>
+	
+	<h2>BodyTemp</h2>
+    <input class="area"  type="text" id="BodyTemp" class="floatLabel" name="Squareft" placeholder="0000" checked>
+	
+	<h2>HeartRate</h2>
+    <input class="area"  type="text" id="HeartRate" class="floatLabel" name="Squareft" placeholder="0000" checked>
+
+
+	<button class="submit" onclick="onClickedEstimate()" type="button">Estimate</button>
+	<div id="uiEstimated" class="result">	<h2></h2> </div>
+    <div id="customAlert" style="display: none; background-color: red; color: white; padding: 15px; border-radius: 5px; text-align: center; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000;">
+        <!-- Le message sera injecté ici -->
+    </div></form>
+    
+</body>
+</html>
