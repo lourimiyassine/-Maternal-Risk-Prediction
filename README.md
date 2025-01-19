@@ -27,7 +27,17 @@ This project demonstrates the implementation of MLOps practices to address criti
 # 📂 Project Structure
 
 `plaintext`
-├── data/                       # Dataset files ( maternal_health_risk.csv )├── notebooks/                  # Jupyter Notebooks for experimentation│   ├── analysis.ipynb          # Notebook for data exploration and preprocessing│   ├── model_training.ipynb    # Notebook for model training and evaluation├── server/                     # Backend source code│   ├── api.py                  # Flask API for predictions│   ├── model.pickle            # Serialized model for deployment├── client/                     # Front-end assets (HTML/CSS/JS)│   ├── index.html              # Main HTML file│   ├── app.js                  # JavaScript logic for API interaction│   ├── styles.css              # Styling for the web app├── README.md                   # Project documentation└── requirements.txt            # Python dependencies
+├── data/                       # Dataset files ( maternal_health_risk.csv )
+├── notebooks/                  # Jupyter Notebooks for experimentation│     
+  ├── maternite.ipynb    # Notebook for model training and evaluation
+├── server/                     # Backend source code│   
+  ├── server.py                  # Flask API for predictions│   
+  ├── model.pickle            # Serialized model for deployment
+├── client/                     # Front-end assets (HTML/CSS/JS)│   
+  ├── index.html              # Main HTML file│   
+  ├── app.js                  # JavaScript logic for API interaction│   
+  ├── styles.css              # Styling for the web app
+├── README.md                   # Project documentation└── requirements.txt            # Python dependencies
 
 
 
